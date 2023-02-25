@@ -1,5 +1,5 @@
-sudo systemctl start gunicorn.socket
-sudo systemctl enable gunicorn.socket
+# sudo systemctl start gunicorn.socket
+# sudo systemctl enable gunicorn.socket
 
 sudo apt install nginx -y 
 
