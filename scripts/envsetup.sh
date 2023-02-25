@@ -2,8 +2,8 @@
 
 sudo apt install python3.8-venv
 
-python3 -m venv /home/ubuntu/env
+python3 -m venv /var/lib/jenkins/workspace/Django-Admin/env
 
-source /home/ubuntu/env/bin/activate
+source /var/lib/jenkins/workspace/Django-Admin/env/bin/activate
 
 pip install django
