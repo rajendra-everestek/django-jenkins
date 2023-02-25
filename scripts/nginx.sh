@@ -3,8 +3,10 @@
 
 sudo apt install nginx -y 
 
-sudo cp -rf /home/ubuntu/django-jenkins/nginx/nginx.conf /etc/nginx/sites-available/Django-Admin
+sudo cp -rf /home/ubuntu/django-jenkins/nginx/nginx.conf /etc/nginx/sites-available/djangojenkin
 chmod 710 /home/ubuntu/django-jenkins
 
-sudo ln -s /etc/nginx/sites-available/Django-Admin /etc/nginx/sites-enabled/
+sudo rm -rf /etc/nginx/sites-enabled/djangojenkin 
+
+sudo ln -s /etc/nginx/sites-available/djangojenkin /etc/nginx/sites-enabled/
 sudo systemctl restart nginx
