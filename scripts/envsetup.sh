@@ -12,4 +12,4 @@ pip install gunicorn
 
 cd /var/lib/jenkins/workspace/Django-Admin/djangojenkin
 
-/var/lib/jenkins/workspace/Django-Admin/env/bin/gunicorn --bind 0.0.0.0:80 djangojenkin.wsgi
+# /var/lib/jenkins/workspace/Django-Admin/env/bin/gunicorn --bind 0.0.0.0:8000 djangojenkin.wsgi
