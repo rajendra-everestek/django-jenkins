@@ -1,0 +1,1 @@
+command = '/home/ubuntu/env'
