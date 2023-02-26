@@ -2,14 +2,14 @@
 
 sudo apt install python3.8-venv
 
-python3 -m venv /home/ubuntu/env
+python3 -m venv /var/lib/jenkins/workspace/Django-Admin/env
 
-source /home/ubuntu/env/bin/activate
+source /var/lib/jenkins/workspace/Django-Admin/env/bin/activate
 
-pip install -r /home/ubuntu/django-jenkins/requirements.txt
+pip install -r /var/lib/jenkins/workspace/Django-Admin/requirements.txt
 
 pip install gunicorn
 
-cd /home/ubuntu/django-jenkins/djangojenkin
+cd /var/lib/jenkins/workspace/Django-Admin/djangojenkin
 
-/home/ubuntu/env/bin/gunicorn --bind 0.0.0.0:8000 djangojenkin.wsgi
+/var/lib/jenkins/workspace/Django-Admin/env/bin/gunicorn --bind 0.0.0.0:8000 djangojenkin.wsgi
