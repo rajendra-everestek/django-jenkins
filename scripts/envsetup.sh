@@ -12,4 +12,4 @@ pip install gunicorn
 
 cd /home/ubuntu/django-jenkins/djangojenkin
 
-# home/ubuntu/env/bin/gunicorn --bind 0.0.0.0:8000 djangojenkin.wsgi
+/home/ubuntu/env/bin/gunicorn --bind 0.0.0.0:8000 djangojenkin.wsgi
